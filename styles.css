@@ -4,6 +4,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+body {
+    background-color: #8a99a6;
+}
+
 h1 {
     color: #f2f2f2;
     background-color: #556273;
@@ -29,4 +33,38 @@ h3 {
 
 .choice {
     padding-top: 1rem;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    text-align: center;
+}
+
+button {
+    padding: 1rem;
+    border-radius: 1rem;
+    border: none;
+    margin: 0.25rem;
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #f2f2f2;
+}
+
+button:active {
+    transform:scale(1.1)
+  }
+
+.scores {
+    display: flex;
+    flex-direction: column;
+}
+
+alert {
+    background-color: #8a99a6;
+    text-align: center;
 }
