@@ -41,21 +41,19 @@ function playRound(playerSelection, computerSelection) {
     }
 
     let playerImage = document.querySelector(".player > img");
-    playerImage.src = "images/"+playerSelection+".svg"
+    playerImage.src = "images/"+playerSelection.toLowerCase()+".svg";
 
     let computerImage = document.querySelector(".computer > img");
-    computerImage.src = "images/"+computerSelection+".svg"
+    computerImage.src = "images/"+computerSelection.toLowerCase()+".svg";
     
-
-
     if (playerScore === 5) {
-    alert("You win!")
+    alert("You win!");
     playerScore = 0;
     computerScore = 0;
     }
 
     if (computerScore === 5) {
-        alert("Computer wins. Try again.")
+        alert("Computer wins. Try again.");
         playerScore = 0;
         computerScore = 0;
     }
